@@ -1,0 +1,17 @@
+networks:
+  sonarqube:
+    driver: bridge
+
+services:
+  sonarqube:
+    container_name: sonarqube
+    image: sonarqube:latest
+    privileged: true
+    restart: always
+    volumes:
+      - ./sonar-server.properties:/opt/sonarqube/conf/sonar.properties
+    ports:
+      - "9000:9000"
+volumes:
+  sonarqube:
+

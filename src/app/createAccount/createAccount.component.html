@@ -1,0 +1,42 @@
+
+<!--
+    Create an account component
+    Allows user to create their account with their own username and password
+    Takes in user input for username and password
+-->
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <div class="mb-md-5 mt-md-4 pb-5">
+              <h2 class="fw-bold mb-2 text-uppercase">Create Acount</h2>
+              <p class="text-white-50 mb-5">Welcome to Master-Rater! <br> Create an account.</p>
+
+              <form #accountForm="ngForm" (ngSubmit)="createAccount(accountForm)">
+                <div class="form-outline form-white mb-4">
+                  <input type="username" class="form-control" aria-describedby="usernameHelp" placeholder="Username"
+                    id="inputUsername" ngModel name="username" required>
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                  <input type="email" class="form-control" id="inputEmailCreate" placeholder="Email" ngModel
+                    name="email" required>
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                  <input type="password" class="form-control" placeholder="Password" ngModel name="password" required>
+                </div>
+
+                <button class="btn btn-outline-light btn-lg px-5" [disabled]="!accountForm.valid">Create Account</button> <br><br>
+                <button routerLink="" class="btn btn-outline-light btn-lg px-5">Back to Login</button> <br><br>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

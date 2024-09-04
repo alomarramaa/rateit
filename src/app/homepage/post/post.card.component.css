@@ -1,0 +1,26 @@
+.post-layout {
+  width: 500px;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.post-title {
+  font-size: 22.5px;
+  font-weight: 600;
+}
+
+.post-description {
+  font-size: 17.5px;
+}
+
+.button {
+border-style: none;
+background-color: transparent;
+}
+
+
+
+
+
+
+

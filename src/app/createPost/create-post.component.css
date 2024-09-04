@@ -1,0 +1,39 @@
+.require {
+    color: #666;
+}
+label small {
+    color: #999;
+    font-weight: normal;
+}
+
+.gradient-custom {
+    background: #6a11cb;
+    background: -webkit-linear-gradient(right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+}
+
+.card{
+    border-radius: 10px;
+    height: auto;
+    background-color: white;
+}
+
+.form-group{
+    position: relative;
+    bottom: 0.5em;
+}
+
+.h2{
+    text-align: center;
+
+}
+
+.space {
+    width: 4px;
+    height: auto;
+    display: inline-block;
+  }
+  
+.btn{
+    background: -webkit-linear-gradient(right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    color: white;
+}

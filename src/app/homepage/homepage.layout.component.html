@@ -1,0 +1,56 @@
+<!--
+  The homepage is broken down into thirds where the left most column is where the
+  users friends will be shown, the middle column will show the post(s), and the right
+  most column will have a selection of filters available to go through.
+-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="gradient-custom"></div>
+
+    <div class="col-2 gradient-custom margins"></div>
+
+    <div class="col-4">
+      <div *ngFor="let post of homepagePosts">
+        <post-component
+          forumName = {{post.forumName}}
+          title = {{post.title}}
+          description = {{post.description}}
+          img = {{post.img}}>
+        </post-component>
+      </div>
+    </div>
+    <div class="col-2">
+      <p class="fonts filterMargins">Filters</p>
+
+      <div class="form-check filterFormat filterMargins">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label text-black check" for="flexCheckDefault">
+          Recent Posts
+        </label>
+      </div>
+      <div class="form-check filterFormat filterMargins">
+
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label text-black check" for="flexCheckDefault">
+          Trending
+        </label>
+      </div>
+
+      <div class="form-check filterFormat filterMargins">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label text-black check" for="flexCheckDefault">
+          Most Liked
+        </label>
+      </div>
+
+      <div class="form-check filterFormat filterMargins">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label text-black check" for="flexCheckDefault">
+          Sponsored
+        </label>
+      </div>
+    </div>
+    <div class="col-2 gradient-custom margins"></div>
+  </div>
+</div>

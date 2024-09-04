@@ -1,0 +1,93 @@
+<!-- Navigation bar at top of each page 
+    - excluding login/create account 
+  Provides user with navigation to:
+    - Create a Post
+    - Create a Forum
+    - Profile
+    - Starred Forums
+    - Liked Posts 
+    - My Posts
+  Also contains:
+      - MasterRater Logo
+      - Search Bar
+ -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="col-3">
+      <a routerLink="home">
+        <!-- Master Rater Logo -->
+        <img class="resize" src="assets/master-rater-logo.jpg" alt="">
+      </a>
+    </div>
+
+    <!-- Search Bar & Search Button -->
+    <div class="col-6">
+      <form class="d-flex search-bar">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success search-btn" type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="col-3 collapse navbar-collapse right-side-items" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+
+        <!-- DropDown Menu: Contains Create a Post & Create a Forum routing -->
+        <div class="dropdown">
+          <button class="btn btn nav-link dropdown-toggle" type="button" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#4753ea" class="bi bi-plus-square-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z" />
+            </svg>
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a routerLink="create-post" class="dropdown-item" href="#">Create a Post</a></li>
+            <li><a routerLink="create-forum" class="dropdown-item" href="#">Create a Forum</a></li>
+          </ul>
+        </div>
+
+
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#4753ea" class="bi bi-bell-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+            </svg>
+          </a>
+        </li>
+
+        <!-- DropDown Menu: Contains routing to Profile, Starred Forums, Liked Posts, and My Posts  -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Username
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a routerLink="user-profile" class="dropdown-item" href="#">Profile</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a routerLink="starred-forums" class="dropdown-item" href="#">Starred Forums</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a routerLink="liked-post" class="dropdown-item" href="#">Liked Posts</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a routerLink="my-posts" class="dropdown-item" href="#">My Posts</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

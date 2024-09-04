@@ -1,0 +1,50 @@
+
+<!--
+    Log in to account component
+    Allows user to login to their account with their own username and password that was given in the create account component
+    Takes in user input for username and password
+    If user needs to create an account first, the button takes them to the createAccount component
+-->
+
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <div class="mb-md-5 mt-md-4 pb-5">
+              <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+              <p class="text-white-50 mb-5">Welcome back to Master-Rater! <br> Please enter your email and
+                password.</p>
+
+              <form #accountForm="ngForm">
+                <div class="form-outline form-white mb-4">
+                  <input type="email" class="form-control" placeholder="Email" ngModel name="email" required email>
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                  <input type="password" class="form-control" placeholder="Password" ngModel name="password" required password>
+                </div>
+
+                <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
+
+                <button type="button" [routerLink]="loginRoute(accountForm)" (click)="accountForm.reset()" class="btn btn-outline-light btn-lg px-5" [disabled]="!accountForm.valid">
+                  Login
+                </button>
+
+                <br><br>
+              </form>
+
+              <a routerLink="create-account">
+                <button class="btn btn-outline-light btn-lg px-5">Create an Account</button>
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

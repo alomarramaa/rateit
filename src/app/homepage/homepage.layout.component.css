@@ -1,0 +1,28 @@
+.gradient-custom {
+  background: #6a11cb;
+  background: -webkit-linear-gradient(right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+}
+
+.margins {
+  height: 10000px;
+  width: 25%;
+}
+
+.fonts {
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 20px;
+  text-decoration:underline;
+}
+
+.filterFormat {
+  padding: 10px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.filterMargins {
+  margin-left: 70px;
+}
+
+

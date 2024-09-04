@@ -1,0 +1,26 @@
+.logo {
+  margin-right: 21.5%;
+}
+
+.search-btn, .search-btn:hover{
+    background: #6a11cb;
+    background: -webkit-linear-gradient(right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    color: white;
+
+}
+
+.right-side-items {
+  padding-left: 2%
+}
+
+.list-item-pd {
+  padding-top: 3%;
+}
+
+img.resize {
+   max-width: 75%;
+   max-height: 75%;
+
+  }
+

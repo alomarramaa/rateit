@@ -1,6 +1,5 @@
-# ![image](https://user-images.githubusercontent.com/97920989/166129477-efd2eab8-b77c-4a4e-bf4d-49fb3903292e.png)
 
-The objective for creating this project is to allow users to express themselves creatively through a variety of different forums and receive feedback from other users with a rating system and/or comments. The name of this application will be called “MasterRater.”
+The objective for creating this project is to allow users to express themselves creatively through a variety of different forums and receive feedback from other users with a rating system and/or comments. The name of this application will be called “RateIt.”
 
 
 ## Description
@@ -15,10 +14,10 @@ Locating specific posts based on desired attributes
 ### Dependencies
 
 The setup might require setting up a virtual machine for that you will need to download and install VirtualBox:
-In addition, you might need to download the LOUD virtual machine
+In addition, you might need to download the LOUD Virtual Machine
 LOUD Ubuntu
 IMPORTANT: The ova files is about 7.2 GB and can take a significant amount of time to download.
-Once againn this might not be needed but worked for us when accessing the project
+Once again this might not be needed but worked for us when accessing the project
 
 ### Installing
 
@@ -58,7 +57,7 @@ Contributors names and contact info
 
 * 0.2
     * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
+    * See [commit change]() or see [release history]()
 * 0.1
     * Initial Release
 

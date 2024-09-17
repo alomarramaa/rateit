@@ -1,12 +1,6 @@
+## Descriptions
 
-The objective for creating this project is to allow users to express themselves creatively through a variety of different forums and receive feedback from other users with a rating system and/or comments. The name of this application will be called “RateIt.”
-
-
-## Description
-
-Contains list of posts
-Contains attributes (name, description, # of users who have starred it, etc) 
-Locating specific posts based on desired attributes
+RateIt allow users to express themselves creatively through a variety of different forums and receive feedback from other users with a rating system and/or comments. 
 
 
 ## Getting Started
